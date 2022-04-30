@@ -69,5 +69,4 @@ void kernel_main()
 
     //initialize idit table
     idt_init();
-    outb(0x60, 0xff);
 }
