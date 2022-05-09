@@ -3,6 +3,7 @@
 #include "config.h"
 #include <stdint.h>
 #include <stddef.h>
+#include "kheap.h"
 
 #define HEAP_BLOCK_TABLE_ENTRY_TAKEN 0X01
 #define HEAP_BLOCK_TABLE_ENTRY_FREE 0X00
@@ -24,6 +25,5 @@
 
 int heap_create(struct heap* heap, void *ptr, void* end, struct heap_table* table);
 void *heap_malloc(struct heap* heap, size_t size);
-void* kzalloc(size_t size);
 void heap_free(struct heap* heap,  void* ptr);
 #endif 

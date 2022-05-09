@@ -24,8 +24,10 @@ void * kmalloc(size_t size){
 
 void* kzalloc(size_t size){
     void* ptr = kmalloc(size);
-    if (!ptr)
+    if (!ptr){
         return 0;
+    }
+        
         
     memset(ptr, 0x00, size);
     return ptr;
