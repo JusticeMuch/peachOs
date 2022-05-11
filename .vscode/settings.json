@@ -1,6 +1,10 @@
 {
     "files.associations": {
         "kernel.h": "c",
-        "kheap.h": "c"
+        "kheap.h": "c",
+        "string.h": "c",
+        "*.tcc": "c",
+        "algorithm": "c",
+        "cctype": "c"
     }
 }
