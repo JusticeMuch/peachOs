@@ -128,8 +128,6 @@ struct path_root *pathparser_parse(const char *path, const char *current_directo
         part = pathparser_parse_path_part(part, &tmp_path);
     }
 
-    struct path_part *tmp = first_part;
-
 out:
     return path_root;
 }
